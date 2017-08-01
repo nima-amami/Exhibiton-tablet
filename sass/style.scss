@@ -1,0 +1,189 @@
+/*
+Theme Name: Experience Invest Exhibition
+Theme URI: http://www.experienceinvest.com
+Description: Developed August 2017
+Version: 1.0
+Author: Exp Inv
+*/
+
+@import "../assets/scripts/foundation/scss/settings";
+@import "variables"; // Load up theme variables
+@import "sliders"; // Load up styler class
+
+
+body {
+
+  font-family: 'Roboto', sans-serif;
+  padding: 0; margin: 0;
+  background-color: $bc-navy;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  color: white;
+
+  /* Better Font Rendering */
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+
+}
+
+
+html, body {height: 100%;}
+ul, li { padding: 0; margin: 0; list-style-type: none; }
+select:focus { outline: none; }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  outline: 0px;
+  box-shadow: 0px;
+
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+a, a label {
+transition: all 0.2s;
+text-decoration: none;
+}
+a:active {text-decoration: none;}
+
+textarea,
+input.text,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+.input-checkbox {
+-webkit-appearance: none;
+border-radius: 0;
+}
+
+
+.overflow {overflow: hidden;}
+.relative {position: relative;}
+
+.left {float: left}
+.right {float: right}
+.pointer {cursor: pointer !important;}
+
+.text-right {text-align: right;}
+.text-center {text-align: center;}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+// base
+.wrapper {}
+.wrapper, .wrapper-padding {height: 100%;}
+.wrapper-padding {padding: 60px; height: 100%;}
+.button-outline {
+  border: 1px solid $bc-white;
+  color: $bc-white;
+  padding: 12px 25px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+
+// Background colours
+.bg-navy {background-color: $bc-navy}
+.bg-green {background-color: $bc-green}
+
+
+
+// Sticky nav
+
+.stickynav {padding: 20px 30px; z-index: 999;
+position: absolute; top: 0; left: 0; width: 100%;}
+
+.button-main-menu {
+
+  text-transform: uppercase;
+  font-size: 15px;
+  padding-left: 25px;
+  float: right;
+
+}
+
+.button-main-menu .icon {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 5px;
+  left: 0px;
+  background-image: url(../assets/images/main-menu.png);
+  background-image: linear-gradient(transparent, transparent), url(../assets/images/main-menu.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top left;
+
+}
+
+
+
+// Main page
+.main-bg-logo {
+  background-image: url(../assets/images/logo-icon.png);
+  background-image: linear-gradient(transparent, transparent), url(../assets/images/logo-icon.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top right;
+  width: 1100px;
+  height: 1100px;
+  position: absolute;
+  top: -509px;
+  right: -516px;
+  opacity: .1;
+}
+
+.main-bg-gradiant {
+  width: 100%; height: 100%;
+  position: absolute;
+  bottom: 0; left: 0;
+
+  background: -moz-linear-gradient(77deg, rgba(67,151,1,0.7) 0%, rgba(57,123,9,0) 21%, rgba(45,90,19,0) 46%, rgba(21,20,42,0) 100%); /* ff3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(21,20,42,0)), color-stop(54%, rgba(45,90,19,0)), color-stop(79%, rgba(57,123,9,0)), color-stop(100%, rgba(67,151,1,0.7))); /* safari4+,chrome */
+background: -webkit-linear-gradient(77deg, rgba(67,151,1,0.7) 0%, rgba(57,123,9,0) 21%, rgba(45,90,19,0) 46%, rgba(21,20,42,0) 100%); /* safari5.1+,chrome10+ */
+background: -o-linear-gradient(77deg, rgba(67,151,1,0.7) 0%, rgba(57,123,9,0) 21%, rgba(45,90,19,0) 46%, rgba(21,20,42,0) 100%); /* opera 11.10+ */
+background: -ms-linear-gradient(77deg, rgba(67,151,1,0.7) 0%, rgba(57,123,9,0) 21%, rgba(45,90,19,0) 46%, rgba(21,20,42,0) 100%); /* ie10+ */
+background: linear-gradient(13deg, rgba(67,151,1,0.7) 0%, rgba(57,123,9,0) 25%, rgba(45,90,19,0) 50%, rgba(21,20,42,0) 100%); /* w3c */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#15142a', endColorstr='#439701',GradientType=0 ); /* ie6-9 */
+}
+
+
+
+
+
+
+// device:small
+@include breakpoint(small only) {
+
+}
+
+
+
+// device:medium
+@include breakpoint(medium only) {
+
+
+}
+
+
+
+// device:large
+@include breakpoint(large only) {
+
+}
