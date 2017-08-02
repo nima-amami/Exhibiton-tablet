@@ -17,7 +17,7 @@ body {
   font-family: 'Poppins', sans-serif;
   padding: 0;
   margin: 0;
-  background-color: #15142a;
+  background-color: #fff;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -190,43 +190,56 @@ h2 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top right;
-  width: 1100px;
-  height: 1100px;
+  width: 800px;
+  height: 800px;
   position: absolute;
-  top: -509px;
-  right: -516px;
-  opacity: .1; }
+  top: -300px;
+  right: -290px;
+  opacity: .1;
+  z-index: 2; }
 
-/* line 167, ../sass/style.scss */
+/* line 168, ../sass/style.scss */
+.main-bg-gradiant-color {
+  width: 100%;
+  height: 65vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #15142a;
+  z-index: 1; }
+
+/* line 175, ../sass/style.scss */
 .main-bg-gradiant {
   width: 100%;
   height: 65vh;
   position: absolute;
   top: 0;
   left: 0;
-  background: -moz-linear-gradient(top, rgba(67, 151, 1, 0) 50%, #439701 110%);
+  z-index: 2;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#439701+81,439701+100&0+76,0.77+100 */
+  background: -moz-linear-gradient(top, rgba(67, 151, 1, 0) 76%, rgba(67, 151, 1, 0.16) 81%, rgba(67, 151, 1, 0.77) 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(67, 151, 1, 0) 0%, #439701 110%);
+  background: -webkit-linear-gradient(top, rgba(67, 151, 1, 0) 76%, rgba(67, 151, 1, 0.16) 81%, rgba(67, 151, 1, 0.77) 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(67, 151, 1, 0) 40%, #439701 110%);
+  background: linear-gradient(to bottom, rgba(67, 151, 1, 0) 76%, rgba(67, 151, 1, 0.16) 81%, rgba(67, 151, 1, 0.77) 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00439701', endColorstr='#439701',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00439701', endColorstr='#c4439701',GradientType=0 );
   /* IE6-9 */ }
 
-/* line 178, ../sass/style.scss */
+/* line 191, ../sass/style.scss */
 .backgrounds {
   z-index: 1; }
 
-/* line 180, ../sass/style.scss */
+/* line 193, ../sass/style.scss */
 .main-bg-solid {
   position: absolute;
-  background-color: #15142a;
+  background-color: #fff;
   height: 35vh;
   width: 100%;
   bottom: 0;
   left: 0; }
 
-/* line 190, ../sass/style.scss */
+/* line 203, ../sass/style.scss */
 .content {
   padding-top: 50px;
   position: absolute;
@@ -235,7 +248,7 @@ h2 {
   height: 100%;
   text-align: center; }
 
-/* line 200, ../sass/style.scss */
+/* line 213, ../sass/style.scss */
 .aura-image {
   background-image: url(../assets/images/aura.jpg);
   width: 100%;
@@ -243,66 +256,70 @@ h2 {
   background-size: cover;
   background-position: center center; }
 
-/* line 208, ../sass/style.scss */
+/* line 221, ../sass/style.scss */
 .investment-home {
   padding: 60px 0px 40px; }
 
-/* line 212, ../sass/style.scss */
+/* line 225, ../sass/style.scss */
 .investment-description {
   background-color: white;
   padding: 20px;
-  height: 55px; }
+  height: 55px;
+  border-left: 1px solid #e7e7e7;
+  border-right: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7; }
 
-/* line 218, ../sass/style.scss */
+/* line 234, ../sass/style.scss */
 .investment-description .left {
   color: #15142a;
   font-size: 12px; }
 
-/* line 223, ../sass/style.scss */
+/* line 239, ../sass/style.scss */
 .investment-description .right {
   padding: 5px 10px 5px;
   color: white;
-  background-color: #439701;
+  background-color: #d53903;
   font-size: 12px;
   text-transform: uppercase;
   margin-top: -5px; }
 
-/* line 232, ../sass/style.scss */
+/* line 248, ../sass/style.scss */
 .padding-project-left {
   margin-right: 20px; }
 
-/* line 233, ../sass/style.scss */
+/* line 249, ../sass/style.scss */
 .padding-project-center {
   margin-left: 10px;
   margin-right: 10px; }
 
-/* line 234, ../sass/style.scss */
+/* line 250, ../sass/style.scss */
 .padding-project-right {
   margin-left: 20px; }
 
-/* line 236, ../sass/style.scss */
+/* line 252, ../sass/style.scss */
 .expinvest {
   text-align: left;
   background-image: url(../assets/images/exp-logo-footer.png);
   background-image: linear-gradient(transparent, transparent), url(../assets/images/exp-logo-footer.svg);
   display: inline-block;
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
   vertical-align: -15%; }
 
-/* line 249, ../sass/style.scss */
+/* line 265, ../sass/style.scss */
 .footer-txt {
   margin-left: 15px;
   font-size: 16px;
   line-height: 28px; }
 
-/* line 255, ../sass/style.scss */
+/* line 271, ../sass/style.scss */
 .footer-home {
   margin-top: 25px; }
 
-/* line 259, ../sass/style.scss */
+/* line 275, ../sass/style.scss */
 .footer-txt {
-  display: inline-block; }
+  display: inline-block;
+  color: #15142a; }

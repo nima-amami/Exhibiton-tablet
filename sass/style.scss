@@ -15,7 +15,7 @@ body {
 
   font-family: 'Poppins', sans-serif;
   padding: 0; margin: 0;
-  background-color: $bc-navy;
+  background-color: $bc-white;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -154,32 +154,45 @@ position: absolute; top: 0; left: 0; width: 100%;}
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top right;
-  width: 1100px;
-  height: 1100px;
+  width: 800px;
+  height: 800px;
   position: absolute;
-  top: -509px;
-  right: -516px;
+  top: -300px;
+  right: -290px;
   opacity: .1;
+  z-index: 2;
 }
 
 
 
+.main-bg-gradiant-color {
+  width: 100%; height: 65vh;
+  position: absolute;
+  top: 0; left: 0;
+  background-color: $bc-navy;
+  z-index: 1;
+}
 .main-bg-gradiant {
   width: 100%; height: 65vh;
   position: absolute;
   top: 0; left: 0;
+  z-index: 2;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#439701+81,439701+100&0+76,0.77+100 */
+  background: -moz-linear-gradient(top,  rgba(67,151,1,0) 76%, rgba(67,151,1,0.16) 81%, rgba(67,151,1,0.77) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(67,151,1,0) 76%,rgba(67,151,1,0.16) 81%,rgba(67,151,1,0.77) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(67,151,1,0) 76%,rgba(67,151,1,0.16) 81%,rgba(67,151,1,0.77) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00439701', endColorstr='#c4439701',GradientType=0 ); /* IE6-9 */
 
-background: -moz-linear-gradient(top, rgba(67,151,1,0) 50%, rgba(67,151,1,1) 110%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(67,151,1,0) 0%,rgba(67,151,1,1) 110%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(67,151,1,0) 40%,rgba(67,151,1,1) 110%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00439701', endColorstr='#439701',GradientType=0 ); /* IE6-9 */
+
+
+
 }
 
 .backgrounds {z-index: 1}
 
 .main-bg-solid {
     position: absolute;
-    background-color: #15142a;
+    background-color: $bc-white;
     height: 35vh;
     width: 100%;
     bottom: 0;
@@ -213,6 +226,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00439701', e
     background-color: white;
     padding: 20px;
     height: 55px;
+    border-left: 1px solid #e7e7e7;
+    border-right: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
 }
 
 .investment-description .left {
@@ -223,7 +239,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00439701', e
 .investment-description .right {
     padding: 5px 10px 5px;
     color: white;
-    background-color: #439701;
+    background-color: #d53903;
     font-size: 12px;
     text-transform: uppercase;
     margin-top: -5px;
@@ -238,8 +254,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00439701', e
   background-image: url(../assets/images/exp-logo-footer.png);
   background-image: linear-gradient(transparent, transparent), url(../assets/images/exp-logo-footer.svg);
   display: inline-block;
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -258,6 +274,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00439701', e
 
 .footer-txt {
   display: inline-block;
+  color: $bc-navy;
 }
 
 // device:small
