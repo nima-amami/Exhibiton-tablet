@@ -15,7 +15,7 @@ body {
 
   font-family: 'Poppins', sans-serif;
   padding: 0; margin: 0;
-  background-color: $bc-white;
+  background-color: #eaeaea;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -64,16 +64,9 @@ input[type="submit"],
 border-radius: 0;
 }
 
-h1 {
-    font-weight: 500;
-    font-size: 32px;
-}
-
-h2 {
-    font-weight: 400;
-    font-size: 21px;
-    line-height: 32px;
-}
+h1 {font-size: 32px; font-weight: 500;}
+h2 {font-size: 21px; font-weight: 400; line-height: 32px;}
+h4 {font-size: 16px; font-weight: 400; line-height: 30px; letter-spacing: -.4px}
 
 
 .overflow {overflow: hidden;}
@@ -97,8 +90,12 @@ h2 {
 
 
 // base
-.wrapper {}
-.wrapper, .wrapper-padding {height: 100%;}
+.wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+    min-height: 768px;
+}
+ .wrapper-padding {height: 100%;}
 .wrapper-padding {padding: 60px; height: 100%;}
 .button-outline {
   border: 1px solid $bc-white;
@@ -113,7 +110,8 @@ h2 {
 // Background colours
 .bg-navy {background-color: $bc-navy}
 .bg-green {background-color: $bc-green}
-
+.bg-white {background-color: white;}
+.bg-lgrey {background-color: $bc-lgrey}
 
 
 
@@ -166,14 +164,14 @@ position: absolute; top: 0; left: 0; width: 100%;}
 
 
 .main-bg-gradiant-color {
-  width: 100%; height: 63vh;
+  width: 100%; height: 483px;
   position: absolute;
   top: 0; left: 0;
   background-color: $bc-navy;
   z-index: 1;
 }
 .main-bg-gradiant {
-  width: 100%; height: 63vh;
+  width: 100%; height: 483px;
   position: absolute;
   top: 0; left: 0;
   z-index: 3;
@@ -193,9 +191,8 @@ position: absolute; top: 0; left: 0; width: 100%;}
 .main-bg-solid {
     position: absolute;
     background-color: $bc-white;
-    height: 37vh;
+    height: 768px;
     width: 100%;
-    bottom: 0;
     left: 0;
 }
 
@@ -239,12 +236,12 @@ position: absolute; top: 0; left: 0; width: 100%;}
 }
 
 .investment-description {
-    background-color: white;
-    padding: 20px;
-    height: 55px;
-    border-left: 1px solid #e7e7e7;
-    border-right: 1px solid #e7e7e7;
-    border-bottom: 1px solid #e7e7e7;
+  background-color: white;
+  padding: 20px;
+  height: 55px;
+  border-left: 1px solid #e7e7e7;
+  border-right: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
 }
 
 .investment-description .left {
@@ -254,12 +251,12 @@ position: absolute; top: 0; left: 0; width: 100%;}
 }
 
 .investment-description .right {
-    padding: 5px 10px 5px;
-    color: white;
-    background-color: $bc-green;
-    font-size: 12px;
-    text-transform: uppercase;
-    margin-top: -5px;
+  padding: 5px 10px 5px;
+  color: white;
+  background-color: $bc-green;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-top: -5px;
 }
 
 .padding-project-left {margin-right: 20px}
@@ -280,12 +277,12 @@ position: absolute; top: 0; left: 0; width: 100%;}
 }
 
 .footer-txt {
-    margin-left: 15px;
-    font-size: 16px;
-    line-height: 28px;
-    display: inline-block;
-    color: $bc-navy;
-    font-weight: 500;
+  margin-left: 15px;
+  font-size: 16px;
+  line-height: 28px;
+  display: inline-block;
+  color: $bc-navy;
+  font-weight: 500;
 }
 
 .footer-home {
@@ -307,16 +304,107 @@ ul.links li:before {
   margin-right: 15px;
 }
 
+
+
+
+// Profile
+.profile-bg {
+  background-image: url(../assets/images/profile-bg.jpg);
+  width: 100%;
+  height: 768px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.profile-bg2 {
+  background-image: url(../assets/images/profile-bg2.png);
+  background-image: linear-gradient(transparent, transparent), url(../assets/images/profile-bg2.svg);
+  width: 100%;
+  height: 715px;
+  background-position: center calc(0% + 50px);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 1100px 630px;
+      padding-top: 95px;
+}
+
+.profile-bg3 {
+  background-image: url(../assets/images/profile-bg3.jpg);
+  width: 100%;
+  height: 300px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.padding-top-profile {padding-top: 250px}
+.padding-top-profile2 {padding-top: 80px}
+
+.profile-bg h1 {font-size: 22px; line-height: 48px}
+.profile-bg h2 {font-size: 14px; line-height: 35px; font-weight: 500}
+
+.green-arrow {
+    width: 60px;
+    padding-top: 30px;
+}
+
+#profile h2 {color: $bc-navy; margin-bottom: 30px}
+#profile h3 {color: $bc-green; text-transform: uppercase; font-size: 24px; font-weight: 600; margin-bottom: 10px; margin-top: 58px}
+#profile p {color: $bc-navy; font-size: 14px; line-height: 35px;}
+
+.profile-padding {padding: 60px 0}
+
+.green-border {
+    border: 3px solid $bc-green;
+    height: 250px;
+    padding: 20px;
+    text-align: center;
+}
+
+.box-padding {padding: 40px 40px 20px}
+
+#profile .green-border p {font-size: 14px; line-height: 24px; color: $bc-navy}
+#profile .profile-bg3 p {font-size: 13px; line-height: 24px; color: white; margin-top: 25px;}
+#profile .profile-text-bottom p {font-size: 12px; line-height: 22px; color: $bc-navy; margin-top: 25px;}
+#profile .profile-text-bottom h4 {color: $bc-navy}
+
+.padding-profile-left {margin-right: 30px}
+.padding-profile-center {margin-left: 15px; margin-right: 15px;}
+.padding-profile-right {margin-left: 30px;}
+
+.testimonial-button {
+    font-size: 13px;
+    margin-top: 26px;
+    padding: 10px 14px;
+    border: 2px solid white;
+    display: table;
+}
+
+.profile-text-bottom {
+    height: 300px;
+    background-color: white;
+    padding: 40px;
+}
+
+.profile-logos {
+    width: 190px;
+    margin-top: 25px;
+}
+
+.profile-bottom {height: 270px}
+
 // device:small
 @include breakpoint(small only) {
-
 }
 
 
 
 // device:medium
 @include breakpoint(medium only) {
-
+  .wrapper {
+      height: 100%;
+  }
 
 }
 
