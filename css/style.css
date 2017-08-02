@@ -194,14 +194,14 @@ h2 {
   height: 800px;
   position: absolute;
   top: -300px;
-  right: -290px;
+  right: -315px;
   opacity: .1;
   z-index: 2; }
 
 /* line 168, ../sass/style.scss */
 .main-bg-gradiant-color {
   width: 100%;
-  height: 65vh;
+  height: 63vh;
   position: absolute;
   top: 0;
   left: 0;
@@ -211,11 +211,11 @@ h2 {
 /* line 175, ../sass/style.scss */
 .main-bg-gradiant {
   width: 100%;
-  height: 65vh;
+  height: 63vh;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 3;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#439701+81,439701+100&0+76,0.77+100 */
   background: -moz-linear-gradient(top, rgba(67, 151, 1, 0) 76%, rgba(67, 151, 1, 0.16) 81%, rgba(67, 151, 1, 0.77) 100%);
   /* FF3.6-15 */
@@ -234,16 +234,16 @@ h2 {
 .main-bg-solid {
   position: absolute;
   background-color: #fff;
-  height: 35vh;
+  height: 37vh;
   width: 100%;
   bottom: 0;
   left: 0; }
 
 /* line 203, ../sass/style.scss */
 .content {
-  padding-top: 50px;
+  padding-top: 20px;
   position: absolute;
-  z-index: 2;
+  z-index: 4;
   width: 100%;
   height: 100%;
   text-align: center; }
@@ -252,15 +252,31 @@ h2 {
 .aura-image {
   background-image: url(../assets/images/aura.jpg);
   width: 100%;
-  height: 200px;
+  height: 220px;
   background-size: cover;
   background-position: center center; }
 
 /* line 221, ../sass/style.scss */
-.investment-home {
-  padding: 60px 0px 40px; }
+.infinity-image {
+  background-image: url(../assets/images/infinity.jpg);
+  width: 100%;
+  height: 220px;
+  background-size: cover;
+  background-position: top center; }
 
-/* line 225, ../sass/style.scss */
+/* line 229, ../sass/style.scss */
+.residence-image {
+  background-image: url(../assets/images/residence.jpg);
+  width: 100%;
+  height: 220px;
+  background-size: cover;
+  background-position: top center; }
+
+/* line 237, ../sass/style.scss */
+.investment-home {
+  padding: 80px 0px 35px; }
+
+/* line 241, ../sass/style.scss */
 .investment-description {
   background-color: white;
   padding: 20px;
@@ -269,34 +285,35 @@ h2 {
   border-right: 1px solid #e7e7e7;
   border-bottom: 1px solid #e7e7e7; }
 
-/* line 234, ../sass/style.scss */
+/* line 250, ../sass/style.scss */
 .investment-description .left {
   color: #15142a;
-  font-size: 12px; }
+  font-size: 12px;
+  text-transform: uppercase; }
 
-/* line 239, ../sass/style.scss */
+/* line 256, ../sass/style.scss */
 .investment-description .right {
   padding: 5px 10px 5px;
   color: white;
-  background-color: #d53903;
+  background-color: #439701;
   font-size: 12px;
   text-transform: uppercase;
   margin-top: -5px; }
 
-/* line 248, ../sass/style.scss */
+/* line 265, ../sass/style.scss */
 .padding-project-left {
   margin-right: 20px; }
 
-/* line 249, ../sass/style.scss */
+/* line 266, ../sass/style.scss */
 .padding-project-center {
   margin-left: 10px;
   margin-right: 10px; }
 
-/* line 250, ../sass/style.scss */
+/* line 267, ../sass/style.scss */
 .padding-project-right {
   margin-left: 20px; }
 
-/* line 252, ../sass/style.scss */
+/* line 269, ../sass/style.scss */
 .expinvest {
   text-align: left;
   background-image: url(../assets/images/exp-logo-footer.png);
@@ -307,19 +324,42 @@ h2 {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
-  vertical-align: -15%; }
+  vertical-align: -7px; }
 
-/* line 265, ../sass/style.scss */
+/* line 282, ../sass/style.scss */
 .footer-txt {
   margin-left: 15px;
   font-size: 16px;
-  line-height: 28px; }
+  line-height: 28px;
+  display: inline-block;
+  color: #15142a;
+  font-weight: 500; }
 
-/* line 271, ../sass/style.scss */
+/* line 291, ../sass/style.scss */
 .footer-home {
   margin-top: 25px; }
 
-/* line 275, ../sass/style.scss */
-.footer-txt {
+/* line 295, ../sass/style.scss */
+ul.links {
+  float: right; }
+
+/* line 297, ../sass/style.scss */
+.links li {
+  color: #15142a;
+  line-height: 27px;
+  font-size: 14px;
+  text-align: left;
+  font-weight: 500;
+  letter-spacing: .5px; }
+
+/* line 299, ../sass/style.scss */
+ul.links li:before {
+  content: '';
   display: inline-block;
-  color: #15142a; }
+  width: 12px;
+  height: 12px;
+  background-image: url(../assets/images/arrow-green.png);
+  background-image: linear-gradient(transparent, transparent), url(../assets/images/arrow-green.svg);
+  background-repeat: no-repeat;
+  vertical-align: -2px;
+  margin-right: 15px; }
