@@ -15,10 +15,13 @@
 <link rel="stylesheet" type="text/css" href="./assets/scripts/slick/slick-theme.css"/>
 
 
+<link rel="stylesheet" href="./assets/scripts/animsition/animsition.min.css">
 
 
 </head>
+
 <body>
+<div class="animsition">
 
 
 
@@ -31,7 +34,7 @@
       <div class="columns large-10 medium-10 small-10">
 
       </div>
-      <div class="columns large-2 medium-2 small-2"><a href="index.html"><div class="button-main-menu relative"><div class="icon"></div>Main menu</div></a></div>
+      <div class="columns large-2 medium-2 small-2"><a class="animsition-link" href="index.html"><div class="button-main-menu relative"><div class="icon"></div>Main menu</div></a></div>
     </div>
   </div>
 
@@ -118,7 +121,7 @@
 
 
 </div>
-
+</div>
 
 
 <!-- JS Scripts -->
@@ -134,6 +137,14 @@
 <script src="./assets/scripts/slick/slick.min.js"></script>
 
 <script src="./assets/scripts/js/functions.js"></script>
+
+
+<script src="./assets/scripts/animsition/animsition.min.js"></script>
+<script>
+$(document).ready(function() {
+  $('.animsition').animsition({loading: false,});
+});
+</script>
 
 <script src="http://localhost:35729/livereload.js"></script>
 
