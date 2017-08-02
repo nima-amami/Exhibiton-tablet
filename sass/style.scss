@@ -113,7 +113,7 @@ h4 {font-size: 16px; font-weight: 400; line-height: 30px; letter-spacing: -.4px}
 .bg-white {background-color: white;}
 .bg-lgrey {background-color: $bc-lgrey}
 
-
+.font-green {color: $bc-green}
 
 // Sticky nav
 
@@ -126,6 +126,7 @@ position: absolute; top: 0; left: 0; width: 100%;}
   font-size: 15px;
   padding-left: 25px;
   float: right;
+  color: white;
 
 }
 
@@ -133,7 +134,7 @@ position: absolute; top: 0; left: 0; width: 100%;}
   position: absolute;
   width: 14px;
   height: 14px;
-  top: 5px;
+  top: 3px;
   left: 0px;
   background-image: url(../assets/images/main-menu.png);
   background-image: linear-gradient(transparent, transparent), url(../assets/images/main-menu.svg);
@@ -379,6 +380,7 @@ ul.links li:before {
     padding: 10px 14px;
     border: 2px solid white;
     display: table;
+    color: white;
 }
 
 .profile-text-bottom {
@@ -393,6 +395,121 @@ ul.links li:before {
 }
 
 .profile-bottom {height: 270px}
+
+
+
+// Testmimonails
+
+.testi-header {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    transition: all .2s linear;
+    background-image: url(../assets/images/testimonials/testi-bg.jpg);
+    height: 100vh;
+    max-height: 768px;
+    padding-top: 180px;
+    padding-right: 50px;
+        font-size: 14px;
+}
+
+.testi-header .nextbutton {
+
+  width: 80px; height: 80px;
+  background-color: $bc-white;
+  z-index: 3;
+  cursor: pointer;
+  transition: all .2s linear;
+  position: relative;
+  margin-top: 30px
+
+}
+
+.testi-header .nextbutton .arrow:before {
+ content: '';
+  background-image: url(../assets/images/arrow-blue.png);
+  background-image: linear-gradient(transparent, transparent), url(../assets/images/arrow-blue.svg);
+    position: absolute;
+    top: 25px; left: 25px;
+    transition: all .1s linear;
+    background-repeat: no-repeat;
+    height: 30px; width: 30px;
+
+}
+
+.testi-header .nextbutton:hover {background-color: $bc-green;}
+
+
+.testi-header .nextbutton:hover .arrow:before {background-image: url(../assets/images/arrow-white.png);
+background-image: linear-gradient(transparent, transparent), url(../assets/images/arrow-white.svg);}
+
+
+
+.testi-vidbox {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto 100%;
+  transition: all .2s linear;
+  min-height: 250px;
+}
+
+.testi-vidbox:hover {background-size: auto 110%;}
+
+.testi-vidbox .dark-overlay-lighter {opacity: 0; visibility: hidden; transition: all .4s linear;}
+.testi-vidbox:hover .dark-overlay-lighter {opacity: 1; visibility: visible;}
+
+.testi-vid-parkhouse {
+  background-image: url(../assets/images/testimonials/vid-parkhouse.jpg);
+}
+
+.testi-vid-chapel {
+  background-image: url(../assets/images/testimonials/vid-chapel.jpg);
+}
+
+.testi-vid-falkner {
+  background-image: url(../assets/images/testimonials/vid-falkner.jpg);
+}
+
+.testi-header-txt h1 {font-size: 30px; line-height: 50px; font-weight: 500}
+.testi-header-txt h2 {font-size: 18px; line-height: 30px; font-weight: 400}
+
+
+// Testimonials slider
+
+.testimonial-slider {color: $bc-navy}
+
+.testimonial-slider .enteries {
+  padding: 50px;
+  background-color: $bc-white;
+  margin-left: 80px;
+  min-height: 458px !important;
+}
+
+.testimonial-slider  .slick-slide {
+
+    padding-left: 10px; padding-right: 10px;
+    margin-right: -80px;
+    opacity: 0.4;
+    transition: all .3s linear;
+
+
+}
+.testimonial-slider  .slick-current {opacity: 1.0;}
+
+.testimonial-slider .enteries p.about {
+  margin-top: 30px;
+  padding-top: 35px;
+  border-top: 2px solid #f3f3f3;
+  font-size: 12px;
+  color: $dark-gray;
+}
+
+.testimonial-slider .enteries h3 {margin-top: 20px;}
+
+.testi-header-txt {
+    margin-left: 50px;
+    margin-top: 40px
+}
 
 // device:small
 @include breakpoint(small only) {
