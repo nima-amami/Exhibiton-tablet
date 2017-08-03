@@ -16,65 +16,33 @@ $('#sales-slider').slick({
 // Testimonials slider
 $('.testimonial-slider').slick({
 
-    infinite: true,
-    arrows: false,
-    centerMode: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-
-    responsive: [
 
 
 
-      {
-        breakpoint: 1024,
-        settings: {
-          centerMode: true,
-          infinite: false,
-          centerPadding: '100px',
-          slidesToShow: 1,
-          slidesToScroll: 1
+  // 6. Smooth anchor scrolling
+    $('a[href^="#"]').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+
+            if (target.length) {
+
+                $('html,body').animate({
+                      scrollTop: target.offset().top - 60
+                }, 500);
+
+
+                return false;
+            }
         }
-      },
-
-      {
-        breakpoint: 768,
-        settings: {
-          centerMode: true,
-          infinite: false,
-          centerPadding: '40px',
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      },
+    });
 
 
-    {
-      breakpoint: 640,
-      settings: {
-        centerMode: true,
-        centerPadding: '30px',
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    },
 
-    {
-      breakpoint: 340,
-      settings: {
-
-        dots: true,
-        centerPadding: '10px',
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
+});
 
 
-    ]
-
-  });
-
-  $('.nextbutton').click(function(){
-    $('.testimonial-slider').slick('slickNext');
-  })
+$(document).ready(function() {
+  $('.animsition').animsition({loading: true,inDuration: 500,outDuration: 200,});
+});
