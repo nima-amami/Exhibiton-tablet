@@ -161,12 +161,9 @@ position: absolute; top: 0; left: 0; width: 100%;}
 }
 
 .main-bg-gradiant-color {
-<<<<<<< HEAD
 
-  width: 100%; height: 63vh;
-=======
   width: 100%; height: 483px;
->>>>>>> origin/riccardo-dev
+
   position: absolute;
   top: 0; left: 0;
   background-color: $bc-navy;
@@ -175,12 +172,9 @@ position: absolute; top: 0; left: 0; width: 100%;}
 }
 
 .main-bg-gradiant {
-<<<<<<< HEAD
 
-  width: 100%; height: 63vh;
-=======
   width: 100%; height: 483px;
->>>>>>> origin/riccardo-dev
+
   position: absolute;
   top: 0; left: 0;
   z-index: 3;
@@ -189,10 +183,7 @@ position: absolute; top: 0; left: 0; width: 100%;}
   background: -webkit-linear-gradient(top,  rgba(67,151,1,0) 76%,rgba(67,151,1,0.16) 81%,rgba(67,151,1,0.77) 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom,  rgba(67,151,1,0) 76%,rgba(67,151,1,0.16) 81%,rgba(67,151,1,0.77) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00439701', endColorstr='#c4439701',GradientType=0 ); /* IE6-9 */
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/riccardo-dev
 }
 
 .backgrounds {z-index: 1}
@@ -207,7 +198,6 @@ position: absolute; top: 0; left: 0; width: 100%;}
 
 
 .content {
-  padding-top: 20px;
   position: absolute;
   z-index: 4;
   width: 100%;
@@ -508,6 +498,72 @@ background-image: linear-gradient(transparent, transparent), url(../assets/image
   margin-left: 50px;
   margin-top: 40px
 }
+
+
+
+// Sales.html
+
+#sales-slider {}
+#sales-slider .img {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: $bc-white;
+  transition: .3s ease-in-out !important;
+}
+
+#sales-slider .bg-infinity {background-image: url(../assets/images/sales/bg-infinity.jpg)}
+#sales-slider .bg-aura {background-image: url(../assets/images/sales/bg-aura.jpg)}
+#sales-slider .bg-residence {background-image: url(../assets/images/sales/bg-residence.jpg)}
+
+
+#sales-slider .sales-content {padding: 80px 100px; text-align: left;}
+#sales-slider .sales-content .title h2 {font-size: 32px; margin-top: 30px; font-weight: 400; margin-left: -150px; opacity: 0;}
+#sales-slider .sales-content .title h3 {font-size: 14px; margin-top: 10px; font-weight: 300; margin-left: -150px; opacity: 0;}
+#sales-slider .sales-content .list {margin-top: 60px;}
+#sales-slider .sales-content a {color: $bc-white;}
+#sales-slider .sales-content li {
+  margin: 20px 0px;
+  padding-left: 35px;
+  background-image: url(../assets/images/sales/arrow.png);
+  background-position: 0px 5px;
+  background-repeat: no-repeat;
+  opacity: 0;
+
+}
+.sales-footer {padding: 60px 60px;}
+.sales-footer-col1 {padding-left: 20px; margin-top: -3px;}
+
+
+#sales-slider .slick-current .title h2 {transition: .6s ease-in-out !important;}
+#sales-slider .slick-current .title h3 {transition: .6s linear !important;}
+#sales-slider .slick-current li {transition: 1.5s linear !important;}
+
+#sales-slider .slick-current .title h2,
+#sales-slider .slick-current .title h3 {margin-left: 0; opacity: 1;}
+#sales-slider .slick-current li {opacity: 1; }
+#sales-slider .slick-current .img {background-size: 100% auto;}
+
+#sales-slider .slick-slide {transition: .3s ease-in-out !important;}
+
+.iframe-internal {
+    width: 100%;
+    height: 100%;
+}
+
+.iframe-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+ }
+.iframe {width: 100% !important; height: 100% !important; margin-top: 62px;}
+
+
+
+
+
 
 // device:small
 @include breakpoint(small only) {
