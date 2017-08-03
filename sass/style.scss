@@ -166,13 +166,16 @@ position: absolute; top: 0; left: 0; width: 100%;}
 
 
 .main-bg-gradiant-color {
+
   width: 100%; height: 63vh;
   position: absolute;
   top: 0; left: 0;
   background-color: $bc-navy;
   z-index: 1;
+
 }
 .main-bg-gradiant {
+
   width: 100%; height: 63vh;
   position: absolute;
   top: 0; left: 0;
@@ -182,9 +185,6 @@ position: absolute; top: 0; left: 0; width: 100%;}
   background: -webkit-linear-gradient(top,  rgba(67,151,1,0) 76%,rgba(67,151,1,0.16) 81%,rgba(67,151,1,0.77) 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom,  rgba(67,151,1,0) 76%,rgba(67,151,1,0.16) 81%,rgba(67,151,1,0.77) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00439701', endColorstr='#c4439701',GradientType=0 ); /* IE6-9 */
-
-
-
 
 }
 
