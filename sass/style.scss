@@ -15,7 +15,7 @@ body {
 
   font-family: 'Poppins', sans-serif;
   padding: 0; margin: 0;
-  background-color: $bc-white;
+  background-color: #eaeaea;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -64,16 +64,9 @@ input[type="submit"],
 border-radius: 0;
 }
 
-h1 {
-    font-weight: 500;
-    font-size: 32px;
-}
-
-h2 {
-    font-weight: 400;
-    font-size: 21px;
-    line-height: 32px;
-}
+h1 {font-size: 32px; font-weight: 500;}
+h2 {font-size: 21px; font-weight: 400; line-height: 32px;}
+h4 {font-size: 16px; font-weight: 400; line-height: 30px; letter-spacing: -.4px}
 
 
 .overflow {overflow: hidden;}
@@ -95,10 +88,13 @@ h2 {
 }
 
 
-
 // base
-.wrapper {}
-.wrapper, .wrapper-padding {height: 100%;}
+.wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+  min-height: 768px;
+}
+.wrapper-padding {height: 100%;}
 .wrapper-padding {padding: 60px; height: 100%;}
 .button-outline {
   border: 1px solid $bc-white;
@@ -113,9 +109,11 @@ h2 {
 // Background colours
 .bg-navy {background-color: $bc-navy}
 .bg-green {background-color: $bc-green}
+.bg-white {background-color: white;}
+.bg-lgrey {background-color: $bc-lgrey}
 
-
-
+// Font colours
+.font-green {color: $bc-green}
 
 // Sticky nav
 
@@ -123,11 +121,11 @@ h2 {
 position: absolute; top: 0; left: 0; width: 100%;}
 
 .button-main-menu {
-
   text-transform: uppercase;
   font-size: 15px;
   padding-left: 25px;
   float: right;
+  color: white;
 
 }
 
@@ -135,19 +133,18 @@ position: absolute; top: 0; left: 0; width: 100%;}
   position: absolute;
   width: 14px;
   height: 14px;
-  top: 5px;
+  top: 3px;
   left: 0px;
   background-image: url(../assets/images/main-menu.png);
   background-image: linear-gradient(transparent, transparent), url(../assets/images/main-menu.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top left;
-
 }
 
 
-
 // Main page
+
 .main-bg-logo {
   background-image: url(../assets/images/logo-icon.png);
   background-image: linear-gradient(transparent, transparent), url(../assets/images/logo-icon.svg);
@@ -163,20 +160,27 @@ position: absolute; top: 0; left: 0; width: 100%;}
   z-index: 2;
 }
 
-
-
 .main-bg-gradiant-color {
+<<<<<<< HEAD
 
   width: 100%; height: 63vh;
+=======
+  width: 100%; height: 483px;
+>>>>>>> origin/riccardo-dev
   position: absolute;
   top: 0; left: 0;
   background-color: $bc-navy;
   z-index: 1;
 
 }
+
 .main-bg-gradiant {
+<<<<<<< HEAD
 
   width: 100%; height: 63vh;
+=======
+  width: 100%; height: 483px;
+>>>>>>> origin/riccardo-dev
   position: absolute;
   top: 0; left: 0;
   z-index: 3;
@@ -185,29 +189,30 @@ position: absolute; top: 0; left: 0; width: 100%;}
   background: -webkit-linear-gradient(top,  rgba(67,151,1,0) 76%,rgba(67,151,1,0.16) 81%,rgba(67,151,1,0.77) 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom,  rgba(67,151,1,0) 76%,rgba(67,151,1,0.16) 81%,rgba(67,151,1,0.77) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00439701', endColorstr='#c4439701',GradientType=0 ); /* IE6-9 */
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/riccardo-dev
 }
 
 .backgrounds {z-index: 1}
 
 .main-bg-solid {
-    position: absolute;
-    background-color: $bc-white;
-    height: 37vh;
-    width: 100%;
-    bottom: 0;
-    left: 0;
+  position: absolute;
+  background-color: $bc-white;
+  height: 768px;
+  width: 100%;
+  left: 0;
 }
 
 
 .content {
-    padding-top: 20px;
-    position: absolute;
-    z-index: 4;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-
+  padding-top: 20px;
+  position: absolute;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+  text-align: center;
 }
 
 .aura-image {
@@ -239,12 +244,12 @@ position: absolute; top: 0; left: 0; width: 100%;}
 }
 
 .investment-description {
-    background-color: white;
-    padding: 20px;
-    height: 55px;
-    border-left: 1px solid #e7e7e7;
-    border-right: 1px solid #e7e7e7;
-    border-bottom: 1px solid #e7e7e7;
+  background-color: white;
+  padding: 20px;
+  height: 55px;
+  border-left: 1px solid #e7e7e7;
+  border-right: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
 }
 
 .investment-description .left {
@@ -254,12 +259,12 @@ position: absolute; top: 0; left: 0; width: 100%;}
 }
 
 .investment-description .right {
-    padding: 5px 10px 5px;
-    color: white;
-    background-color: $bc-green;
-    font-size: 12px;
-    text-transform: uppercase;
-    margin-top: -5px;
+  padding: 5px 10px 5px;
+  color: white;
+  background-color: $bc-green;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-top: -5px;
 }
 
 .padding-project-left {margin-right: 20px}
@@ -280,12 +285,12 @@ position: absolute; top: 0; left: 0; width: 100%;}
 }
 
 .footer-txt {
-    margin-left: 15px;
-    font-size: 16px;
-    line-height: 28px;
-    display: inline-block;
-    color: $bc-navy;
-    font-weight: 500;
+  margin-left: 15px;
+  font-size: 16px;
+  line-height: 28px;
+  display: inline-block;
+  color: $bc-navy;
+  font-weight: 500;
 }
 
 .footer-home {
@@ -307,16 +312,214 @@ ul.links li:before {
   margin-right: 15px;
 }
 
+
+
+
+// Profile
+
+
+.profile-bg {
+  background-image: url(../assets/images/profile-bg.jpg);
+  width: 100%;
+  height: 768px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.profile-bg2 {
+  background-image: url(../assets/images/profile-bg2.png);
+  background-image: linear-gradient(transparent, transparent), url(../assets/images/profile-bg2.svg);
+  width: 100%;
+  height: 715px;
+  background-position: center calc(0% + 50px);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 1100px 630px;
+  padding-top: 95px;
+}
+
+.profile-bg3 {
+  background-image: url(../assets/images/profile-bg3.jpg);
+  width: 100%;
+  height: 300px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.padding-top-profile {padding-top: 250px}
+.padding-top-profile2 {padding-top: 80px}
+
+.profile-bg h1 {font-size: 22px; line-height: 48px}
+.profile-bg h2 {font-size: 14px; line-height: 35px; font-weight: 500}
+
+.green-arrow {
+  width: 60px;
+  padding-top: 30px;
+}
+
+#profile h2 {color: $bc-navy; margin-bottom: 30px}
+#profile h3 {color: $bc-green; text-transform: uppercase; font-size: 24px; font-weight: 600; margin-bottom: 10px; margin-top: 58px}
+#profile p {color: $bc-navy; font-size: 14px; line-height: 35px;}
+
+.profile-padding {padding: 60px 0}
+
+.green-border {
+  border: 3px solid $bc-green;
+  height: 250px;
+  padding: 20px;
+  text-align: center;
+}
+
+.box-padding {padding: 40px 40px 20px}
+
+#profile .green-border p {font-size: 14px; line-height: 24px; color: $bc-navy}
+#profile .profile-bg3 p {font-size: 13px; line-height: 24px; color: white; margin-top: 25px;}
+#profile .profile-text-bottom p {font-size: 12px; line-height: 22px; color: $bc-navy; margin-top: 25px;}
+#profile .profile-text-bottom h4 {color: $bc-navy}
+
+.padding-profile-left {margin-right: 30px}
+.padding-profile-center {margin-left: 15px; margin-right: 15px;}
+.padding-profile-right {margin-left: 30px;}
+
+.testimonial-button {
+  font-size: 13px;
+  margin-top: 26px;
+  padding: 10px 14px;
+  border: 2px solid white;
+  display: table;
+  color: white;
+}
+
+.profile-text-bottom {
+  height: 300px;
+  background-color: white;
+  padding: 40px;
+}
+
+.profile-logos {
+  width: 190px;
+  margin-top: 25px;
+}
+
+.profile-bottom {height: 270px}
+
+
+// Testimonails
+
+.testi-header {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  transition: all .2s linear;
+  background-image: url(../assets/images/testimonials/testi-bg.jpg);
+  height: 100vh;
+  max-height: 768px;
+  padding-top: 180px;
+  padding-right: 50px;
+  font-size: 14px;
+}
+
+.testi-header .nextbutton {
+  width: 80px; height: 80px;
+  background-color: $bc-white;
+  z-index: 3;
+  cursor: pointer;
+  transition: all .2s linear;
+  position: relative;
+  margin-top: 30px
+}
+
+.testi-header .nextbutton .arrow:before {
+ content: '';
+  background-image: url(../assets/images/arrow-blue.png);
+  background-image: linear-gradient(transparent, transparent), url(../assets/images/arrow-blue.svg);
+  position: absolute;
+  top: 25px; left: 25px;
+  transition: all .1s linear;
+  background-repeat: no-repeat;
+  height: 30px; width: 30px;
+}
+
+.testi-header .nextbutton:hover {background-color: $bc-green;}
+
+.testi-header .nextbutton:hover .arrow:before {background-image: url(../assets/images/arrow-white.png);
+background-image: linear-gradient(transparent, transparent), url(../assets/images/arrow-white.svg);}
+
+.testi-vidbox {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto 100%;
+  transition: all .2s linear;
+  min-height: 250px;
+}
+
+.testi-vidbox:hover {background-size: auto 110%;}
+
+.testi-vidbox .dark-overlay-lighter {opacity: 0; visibility: hidden; transition: all .4s linear;}
+.testi-vidbox:hover .dark-overlay-lighter {opacity: 1; visibility: visible;}
+
+.testi-vid-parkhouse {
+  background-image: url(../assets/images/testimonials/vid-parkhouse.jpg);
+}
+
+.testi-vid-chapel {
+  background-image: url(../assets/images/testimonials/vid-chapel.jpg);
+}
+
+.testi-vid-falkner {
+  background-image: url(../assets/images/testimonials/vid-falkner.jpg);
+}
+
+.testi-header-txt h1 {font-size: 30px; line-height: 50px; font-weight: 500}
+.testi-header-txt h2 {font-size: 18px; line-height: 30px; font-weight: 400}
+
+
+.testimonial-slider {color: $bc-navy}
+
+.testimonial-slider .enteries {
+  padding: 50px;
+  background-color: $bc-white;
+  margin-left: 80px;
+  min-height: 458px !important;
+}
+
+.testimonial-slider .slick-slide {
+  padding-left: 10px; padding-right: 10px;
+  margin-right: -80px;
+  opacity: 0.4;
+  transition: all .3s linear;
+}
+
+.testimonial-slider  .slick-current {opacity: 1.0;}
+
+.testimonial-slider .enteries p.about {
+  margin-top: 30px;
+  padding-top: 35px;
+  border-top: 2px solid #f3f3f3;
+  font-size: 12px;
+  color: $dark-gray;
+}
+
+.testimonial-slider .enteries h3 {margin-top: 20px;}
+
+.testi-header-txt {
+  margin-left: 50px;
+  margin-top: 40px
+}
+
 // device:small
 @include breakpoint(small only) {
-
 }
 
 
 
 // device:medium
 @include breakpoint(medium only) {
-
+  .wrapper {
+      height: 100%;
+  }
 
 }
 
