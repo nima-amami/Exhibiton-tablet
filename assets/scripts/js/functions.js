@@ -1,5 +1,20 @@
+// Sales Slider
+$('#sales-slider').slick({
 
-$(document).ready(function(){
+  infinite: true,
+  arrows: false,
+  centerMode: false,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  speed: 800,
+  useTransform: true,
+
+});
+
+
+
+// Testimonials slider
+$('.testimonial-slider').slick({
 
 
 
