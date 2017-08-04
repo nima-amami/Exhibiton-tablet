@@ -40,24 +40,35 @@
 
           <!-- Slide 1 - Infinity -->
           <div>
-            <div class="row collapse" data-equalizer>
-              <div class="columns large-6 medium-6 small-6 img bg-infinity bg-white" data-equalizer-watch></div>
-              <div class="columns large-6 medium-6 small-6 sales-content bg-navy" data-equalizer-watch>
-                  <div class="title">
+            <div class="row collapse">
+              <div class="columns large-6 medium-6 small-6 img bg-infinity bg-white"></div>
+              <div class="columns large-6 medium-6 small-6 sales-content bg-navy">
 
+                  <div class="title">
                     <h2>Infinity Liverpool</h2>
                     <h3>Luxury residential apartments</h3>
                   </div>
+
                   <div class="list">
                     <ul>
                       <a href="#"><li>Microsite</li></a>
                       <a href="#"><li>Location on google maps</li></a>
                       <a href="#"><li>Floor plans</li></a>
                       <a href="#"><li>Unit 3D Images</li></a>
-                      <a href="./content/infinity/financials.html"><li>Financials</li></a>
+
+                      <li class="sub-parent pointer">
+                        Financials
+                        <ul class="sub-inner">
+                          <a href="./content/infinity/financials.html"><li>Studio Apartments</li></a>
+                          <a href="./content/infinity/financials.html"><li>1 Bedroom Apartments</li></a>
+                          <a href="./content/infinity/financials.html"><li>2 Bedroom Apartments</li></a>
+                        </ul>
+                      </li>
+
                       <a href="#"><li>Sales Presentation </li></a>
                     </ul>
                   </div>
+
               </div>
             </div>
           </div>
@@ -79,7 +90,15 @@
                       <a href="#"><li>Location on google maps</li></a>
                       <a href="#"><li>Floor plans</li></a>
                       <a href="#"><li>Unit 3D Images</li></a>
-                      <a href="#"><li>Financials</li></a>
+                      <li class="sub">
+                        Financials
+                        <ul>
+                          <a href="#"><li>1 Bedroom</li></a>
+                          <a href="#"><li>2 Bedroom</li></a>
+                          <a href="#"><li>3 Bedroom</li></a>
+                        </ul>
+
+                      </li>
                       <a href="#"><li>Sales Presentation </li></a>
                     </ul>
                   </div>
@@ -160,6 +179,13 @@
 <script src="./assets/scripts/slick/slick.min.js"></script>
 <script src="./assets/scripts/js/functions.js"></script>
 <script src="./assets/scripts/js/sales.js"></script>
+
+
+<script>
+$( "li.sub-parent" ).click(function() {
+  $(".sub-inner").toggleClass( "sub-inner-active" );
+});
+</script>
 
 
 <script src="http://localhost:35729/livereload.js"></script>
