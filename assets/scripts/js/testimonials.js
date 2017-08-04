@@ -8,24 +8,9 @@
     centerMode: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-
+    centerPadding: '90px',
     responsive: [
 
-
-
-      {
-        breakpoint: 1024,
-        settings: {
-          centerPadding: '60px',
-        }
-      },
-
-      {
-        breakpoint: 768,
-        settings: {
-          centerPadding: '40px',
-        }
-      },
 
 
 
