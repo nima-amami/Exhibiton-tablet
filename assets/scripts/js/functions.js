@@ -34,3 +34,8 @@
 $(document).ready(function() {
   $('.animsition').animsition({loading: true,inDuration: 500,outDuration: 200,});
 });
+
+
+function goBack() {
+    window.history.back();
+}
