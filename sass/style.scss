@@ -624,3 +624,22 @@ background-image: linear-gradient(transparent, transparent), url(../assets/image
 and (min-device-width : 768px)
 and (max-device-width : 1024px)
 and (orientation : portrait) { .overlay-portrait {display: initial} }
+
+
+
+
+
+/* for high resolution display */
+
+@media only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2) {
+
+  .aura-image {background-image: url(../assets/images/aura@2x.jpg);}
+  .infinity-image {background-image: url(../assets/images/infinity@2x.jpg);}
+  .residence-image {background-image: url(../assets/images/residence@2x.jpg);}
+
+  .profile-bg {background-image: url(../assets/images/profile-bg@2x.jpg);}
+
+}

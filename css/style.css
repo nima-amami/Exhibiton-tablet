@@ -805,3 +805,20 @@ ul.links li:before {
   /* line 626, ../sass/style.scss */
   .overlay-portrait {
     display: initial; } }
+/* for high resolution display */
+@media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  /* line 639, ../sass/style.scss */
+  .aura-image {
+    background-image: url(../assets/images/aura@2x.jpg); }
+
+  /* line 640, ../sass/style.scss */
+  .infinity-image {
+    background-image: url(../assets/images/infinity@2x.jpg); }
+
+  /* line 641, ../sass/style.scss */
+  .residence-image {
+    background-image: url(../assets/images/residence@2x.jpg); }
+
+  /* line 643, ../sass/style.scss */
+  .profile-bg {
+    background-image: url(../assets/images/profile-bg@2x.jpg); } }
