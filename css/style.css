@@ -700,7 +700,7 @@ h4 {
   transition: all .3s linear; }
 
 /* line 538, ../sass/style.scss */
-.testimonial-slider .slick-current {
+.testimonial-slider .slick-center {
   opacity: 1.0; }
 
 /* line 540, ../sass/style.scss */
