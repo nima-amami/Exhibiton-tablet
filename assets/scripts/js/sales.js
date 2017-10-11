@@ -7,5 +7,6 @@ $('#sales-slider').slick({
   slidesToScroll: 1,
   speed: 800,
   useTransform: true,
+  swipe: true
 
 });
